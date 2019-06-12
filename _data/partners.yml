@@ -1,0 +1,7 @@
+streamr:
+  description: Elk allows you to own your sensors’ data and sell them through Streamr’s open marketplace.
+  logo: partners/streamr.png
+
+gitcoin:
+  description: Elk is a great start to learn blockchain development and potentially earn money through Gitcoin’s open source bounties.
+  logo: partners/gitcoin.png
