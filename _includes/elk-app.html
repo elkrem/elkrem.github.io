@@ -1,0 +1,113 @@
+<section
+  class="elementor-element elementor-element-6e675d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+  data-id="6e675d2" data-element_type="section">
+  <div class="elementor-container elementor-column-gap-default">
+    <div class="elementor-row">
+      <div class="elementor-element elementor-element-9b762bb elementor-column elementor-col-100 elementor-top-column"
+        data-id="9b762bb" data-element_type="column">
+        <div class="elementor-column-wrap  elementor-element-populated">
+          <div class="elementor-widget-wrap">
+            <div class="elementor-element elementor-element-f36932d elementor-widget elementor-widget-menu-anchor"
+              data-id="f36932d" data-element_type="widget" data-widget_type="menu-anchor.default">
+              <div class="elementor-widget-container">
+                <div id="elk-app" class="elementor-menu-anchor"></div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-cefd067 elementor-widget elementor-widget-heading"
+              data-id="cefd067" data-element_type="widget" data-widget_type="heading.default">
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Interact with your hardware privately and remotely with the Elk app
+                </h2>
+              </div>
+            </div>
+            <section
+              class="elementor-element elementor-element-76d8e24 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section"
+              data-id="76d8e24" data-element_type="section">
+              <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-row">
+                  <div
+                    class="elementor-element elementor-element-d8b904c elementor-column elementor-col-50 elementor-inner-column"
+                    data-id="d8b904c" data-element_type="column">
+                    <div class="elementor-column-wrap  elementor-element-populated">
+                      <div class="elementor-widget-wrap">
+                        <div
+                          class="elementor-element elementor-element-cd3268c elementor-widget elementor-widget-text-editor"
+                          data-id="cd3268c" data-element_type="widget" data-widget_type="text-editor.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-text-editor elementor-clearfix">
+                              <p style="font-size: 1.3rem;">
+                                We extended Ethereum&#8217;s Whisper protocol and built the Elk mobile app, an app that
+                                makes it trivial for you to interact with your hardware remotely and privately via
+                                Whisper through any mobile device.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-313e369 elementor-widget__width-initial elementor-hidden-desktop elementor-hidden-tablet elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+                          data-id="313e369" data-element_type="widget" data-settings='{"aspect_ratio":"169"}'
+                          data-widget_type="video.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+                              <video class="elementor-video" src="assets/images/lightbulb-demo.mp4" autoplay loop muted
+                                controlslist="nodownload"></video>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-1105320 elementor-widget elementor-widget-text-editor"
+                          data-id="1105320" data-element_type="widget" data-widget_type="text-editor.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-text-editor elementor-clearfix">
+                              <p style="font-size: 1.3rem;">
+                                Here&#8217;s
+                                <strong>all the code you need</strong> to be able to control a lightbulb remotely using
+                                our development board and the Elk app:
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="elementor-element elementor-element-47482b3 elementor-widget elementor-widget-text-editor"
+                          data-id="47482b3" data-element_type="widget" data-widget_type="text-editor.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-text-editor elementor-clearfix">
+                              <pre>bool bulbState = false;</pre>
+                              <pre>void setup() {<br/>  pinMode(A0, OUTPUT);<br/>  Elk.expose("Toggle", &amp;toggle);<br/>}</pre>
+                              <pre>void toggle() {<br/>  digitalWrite(A0, !bulbState);<br/>  bulbState = !bulbState;<br/>}</pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-7b34fe5 elementor-column elementor-col-50 elementor-inner-column"
+                    data-id="7b34fe5" data-element_type="column">
+                    <div class="elementor-column-wrap  elementor-element-populated">
+                      <div class="elementor-widget-wrap">
+                        <div
+                          class="elementor-element elementor-element-3144941 elementor-widget__width-initial elementor-absolute elementor-hidden-phone elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+                          data-id="3144941" data-element_type="widget"
+                          data-settings='{"_position":"absolute","aspect_ratio":"169"}'
+                          data-widget_type="video.default">
+                          <div class="elementor-widget-container">
+                            <div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+                              <video class="elementor-video" src="assets/images/lightbulb-demo.mp4" autoplay loop muted
+                                controlslist="nodownload"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
