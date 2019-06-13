@@ -23,6 +23,14 @@
   font-size: 16px;
 }
 
+.center {
+  text-align: center;
+}
+
+.final-feature-col {
+  padding-top: 60px;
+}
+
 @media(max-width:768px) {
   .center-mobile {
     text-align: center;
@@ -30,5 +38,24 @@
 
   .reverse-mobile {
     flex-direction: column-reverse;
+  }
+
+  .final-feature-col {
+    padding-top: 40px;
+  }
+
+  .final-feature-col-2 {
+    padding-top: 40px;
+  }
+}
+
+@media(min-width:768px) {
+  .slim-row {
+    padding: 0 50px;
+  }
+
+  .blockchain-logos {
+    position: relative;
+    top: -40px;
   }
 }
