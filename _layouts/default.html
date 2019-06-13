@@ -13,6 +13,7 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <link type="text/css" media="all" href="/assets/css/style.css" rel="stylesheet" />
+  <link type="text/css" media="all" href="/assets/css/base.css" rel="stylesheet" />
   <link rel="icon" href="/assets/images/cropped-logo-512-32x32.png" sizes="32x32" />
   <link rel="icon" href="/assets/images/cropped-logo-512-192x192.png" sizes="192x192" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -131,20 +132,7 @@
           videos[i].appendChild(play);
 
           videos[i].onclick = function() {
-            var iframe = document.createElement("iframe");
-            var iframe_url =
-              "https://www.youtube.com/embed/" +
-              this.id +
-              "?autoplay=1&autohide=1";
-            if (this.getAttribute("data-params"))
-              iframe_url += "&" + this.getAttribute("data-params");
-            iframe.setAttribute("src", iframe_url);
-            iframe.setAttribute("frameborder", "0");
-
-            iframe.style.width = this.style.width;
-            iframe.style.height = this.style.height;
-
-            this.parentNode.replaceChild(iframe, this);
+            this.parentNode.innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + this.id + '?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
           };
         }
       });
