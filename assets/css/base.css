@@ -12,6 +12,19 @@
   color: white;
 }
 
+.dark-background {
+  background-color: #333333;
+}
+
+.footer-nav a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
 .p-new {
   padding-top: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +60,18 @@
   .final-feature-col-2 {
     padding-top: 40px;
   }
+
+  .footer-logo {
+    width: 30% !important;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+
+  .footer-nav {
+    text-align: center;
+  }
 }
 
 @media(min-width:768px) {
@@ -57,5 +82,9 @@
   .blockchain-logos {
     position: relative;
     top: -40px;
+  }
+
+  .footer-nav {
+    text-align: right;
   }
 }
