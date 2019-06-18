@@ -135,4 +135,12 @@
   .about-img {
     padding: 8px;
   }
+
+  .col-40 {
+    width: 40%;
+  }
+
+  .col-60 {
+    width: 60%;
+  }
 }

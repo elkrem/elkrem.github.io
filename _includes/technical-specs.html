@@ -1,0 +1,55 @@
+<section class="elementor-section-boxed elementor-section" style="text-align: center; padding-top: 40px;">
+  <div class="elementor-container elementor-column-gap-default">
+    <div class="elementor-row">
+      <div class="elementor-column elementor-col-100">
+        <div class="elementor-column-wrap  elementor-element-populated">
+          <div style="margin: auto;">
+            <h2 class="h2-new center-mobile" style="font-weight: 300">Technical Specs</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="elementor-section-boxed elementor-section" >
+  <div class="elementor-container elementor-column-gap-default">
+  <div class="elementor-row">
+    <div class="elementor-column col-40">
+      <div class="elementor-column-wrap  elementor-element-populated">
+        <div class="elementor-widget-wrap">
+          <div>
+            <img src="/assets/images/elk-board-2.png">
+            <div class="center">
+              <p class="p-caption" style="padding-left: 80px; padding-right: 80px; padding-top: 20px">
+                A protype of Elk using an Octavo OSD335x-SM SoM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-column col-60">
+      <div class="elementor-column-wrap  elementor-element-populated">
+        <div>
+          <p class="p-new">
+            We've been going through multiple prototypes and here are the specs of our final prototype.
+            Technical specs are subject to change in the future.
+          </p>
+          <ul class="p-new" style="list-style: square inside none;">
+            {% for spec in site.data.technical.specs %}
+            <li class="p-new" style="padding: 3px 0">{{ spec }}</li>
+            {% endfor %}
+            <li class="p-new" style="padding: 3px 0">{{ site.data.technical.ios.description }}</li>
+            <ul style="list-style: circle inside none; margin-left: 20px;">
+              {% for io in site.data.technical.ios.list %}
+              <li class="p-new" style="padding: 3px 0">{{ io }}</li>
+              {% endfor %}
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
