@@ -91,6 +91,7 @@
 #page-nav label,
 #hamburger {
   display: none;
+  cursor: pointer;
 }
 
 /* Menu Items */
