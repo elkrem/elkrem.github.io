@@ -62,7 +62,94 @@
   font-weight: bold;
 }
 
+/** Navigation **/
+
+.page-nav-inner {
+  position: absolute;
+  right: 0;
+}
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#page-nav {
+  width: 100%;
+  height: 90px;
+  background: rgba(255, 255, 255, .88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/* Hide Hamburger */
+#page-nav label,
+#hamburger {
+  display: none;
+}
+
+/* Menu Items */
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page-nav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  padding: 32px 20px;
+}
+
+#page-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 @media(max-width:768px) {
+  .page-nav-inner {
+    width: 100%;
+  }
+
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    font-style: normal;
+    font-size: 2.2em;
+    padding: 15px 10px 10px 10px;
+    float: right;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+
+  #page-nav ul li a {
+    width: 100%;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+
+  #page-nav input:checked~ul {
+    display: block;
+    background-color: rgba(255, 255, 255, .88);
+    margin-top: 90px;
+  }
+
+}
+
+/** End navigation. **/
+
+@media(max-width:768px) {
+  .bootcamp-header {
+    padding-top: 100px !important;
+  }
+
   .center-mobile {
     text-align: center;
     margin: auto;
@@ -142,5 +229,9 @@
 
   .col-60 {
     width: 60%;
+  }
+
+  .col-66 {
+    width: 66.666%;
   }
 }
