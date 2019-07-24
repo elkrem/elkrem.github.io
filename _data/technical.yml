@@ -1,8 +1,8 @@
 specs:
   - Dual inline breadboard compatible hardware board (55mm x 25.5mm)
-  - 1Ghz Linux SoC with 512MB of RAM
+  - Quad Core 1Ghz Linux SoC (H3 from Allwinner) with 512MB of RAM
   - 8GB mass storage eMMC persistant storage
-  - 100Mhz 32-bit microcontroller
+  - 100Mhz 32-bit microcontroller (STM32f411 from STM)
   - 2.4Ghz WiFi module with an integrated antenna
   - RGB LED
   - 2 push-buttons
