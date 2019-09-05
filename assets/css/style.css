@@ -1929,6 +1929,10 @@ input[type=submit]:hover {
     width: 50%
   }
 
+  .elementor-column.elementor-col-75 {
+    width: 75%
+  }
+
   .elementor-column.elementor-col-100 {
     width: 100%
   }
